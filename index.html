@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel = "stylesheet" href="stylesheet.css">
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div class="container">
+      <div class="dashboard">
+        <div class="title">
+            <p class="text">ROCK</p>
+            <p class="text">PAPER</p>
+            <p class="text">SCISSORS</p>
+        </div>
+        <div class="score">
+            <div class="scoreCard">
+                <p class="sub_score">YOUR SCORE</p>
+                <p class="user_score scores">0</p>
+            </div>
+            <div class="scoreCard">
+              <p class="sub_score">CPU SCORE</p>
+              <p class="cpu_score scores">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="initial_state active_initial_state">
+         <div class="first_div">
+            <div onclick="setUserSelected(this);" class="paper">
+                <div class="inner_ring bg_paper"></div>
+            </div>
+            <div onclick="setUserSelected(this);" class="scissor">
+              <div class="inner_ring bg_scissor"></div>
+            </div> 
+         </div>
+         <div class="second_div">
+            <div onclick="setUserSelected(this);" class="rock">
+              <div class="inner_ring bg_rock"></div>
+            </div>
+         </div>
+      </div>
+
+      <div class="user_selected">
+          <div class="userPicked">
+              <p class="Text">YOU PICKED</p>
+              <div class="outer_ring ">
+                <div class="innerRing "></div>
+              </div>
+          </div>
+          <div class="housePicked">
+            <p class="Text">COMPUTER PICKED</p>
+            <div class="ring">
+              <div class="ringInner">
+                <div class="ringInnerInner"> </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <div class="play_again">
+      <div class="userPicked">
+        <p class="Text">YOU PICKED</p>
+        <div class="user_picked">
+          <div class="user_picked_bg"></div>
+        </div>
+    </div>
+      <div class="playAgain">
+        <p class="display_winner">YOU WON</p>
+        <input class="button" type="button" value="PLAY AGAIN">
+      </div>
+      <div class="housePicked">
+        <p class="Text">COMPUTER PICKED</p>
+        <div class=" CPU_picked">
+          <div class=" CPU_picked_bg"></div>
+        </div>
+    </div>
+  </div>
+    <div class="display_rules">
+      <div class="rules_header">
+        <p >RULES</p>
+        <input type="button" class="exit_rules" value="X">
+      </div>
+        
+        <div class="img"></div>
+    </div>
+
+      <footer>
+          <input class="next" value="RULES" type="button">
+      </footer>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
